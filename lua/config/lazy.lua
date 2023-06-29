@@ -18,6 +18,12 @@ require("lazy").setup({
     { import = "plugins" },
     -- ts
     { import = "lazyvim.plugins.extras.lang.typescript" },
+    --
+    { import = "lazyvim.plugins.extras.lang.json" },
+    -- flash
+    { import = "lazyvim.plugins.extras.editor.flash" },
+    -- dap
+    { import = "lazyvim.plugins.extras.dap.core" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

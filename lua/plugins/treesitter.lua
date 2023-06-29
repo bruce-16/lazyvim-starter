@@ -2,9 +2,16 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
-        "rust",
-      })
+      if type(opts.ensure_installed) == "table" then
+        vim.list_extend(opts.ensure_installed, {
+          "rust",
+          "json",
+          "json5",
+          "jsonc",
+          "typescript",
+          "tsx",
+        })
+      end
     end,
   },
 }
