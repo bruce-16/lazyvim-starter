@@ -20,6 +20,13 @@ return {
     },
   },
 
+  -- tokyonight colorscheme
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = true,
+  --   opts = { style = "moon" },
+  -- },
+
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -28,7 +35,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
+  -- { "folke/trouble.nvim", enabled = false },
 
   -- add symbols-outline
   {
