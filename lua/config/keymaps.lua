@@ -17,8 +17,5 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
--- tmux navigator
-map("n", "<C-h>", '<cmd>lua require("tmux").move_left()<cr>', { desc = "Go to left window", remap = true })
-map("n", "<C-l>", '<cmd>lua require("tmux").move_right()<cr>', { desc = "Go to right window", remap = true })
-map("n", "<C-j>", '<cmd>lua require("tmux").move_bottom()<cr>', { desc = "Go to lower window", remap = true })
-map("n", "<C-k>", '<cmd>lua require("tmux").move_top()<cr>', { desc = "Go to upper window", remap = true })
+-- nohls
+map("n", "<C-n>", "<cmd>nohls<cr>", { desc = "nohls", remap = true })
