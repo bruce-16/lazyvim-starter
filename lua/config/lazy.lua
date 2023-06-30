@@ -24,8 +24,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.flash" },
     -- dap
     { import = "lazyvim.plugins.extras.dap.core" },
-    -- edgy
-    { import = "lazyvim.plugins.extras.ui.edgy" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
