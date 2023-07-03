@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
+local copyUtils = require("fns.copy")
 
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
@@ -19,3 +20,7 @@ end
 
 -- nohls
 map("n", "<C-n>", "<cmd>nohls<cr>", { desc = "nohls", remap = true })
+-- copy the absolute path of the current buffer
+map("n", "<leader>bC", copyUtils.copyFileAbsolutePath, { desc = "Copy the absolute path of the current buffer." })
+-- copy the relative path of the current buffer
+map("n", "<leader>bc", copyUtils.copyFileRelativePath, { desc = "Copy the relative path of the current buffer." })
