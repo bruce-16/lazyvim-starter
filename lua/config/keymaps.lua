@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
 local copyUtils = require("fns.copy")
+local mentionUtils = require("fns.mention")
 
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
