@@ -18,10 +18,8 @@ require("lazy").setup({
     { import = "plugins" },
     -- ts
     { import = "lazyvim.plugins.extras.lang.typescript" },
-    --
+    -- json
     { import = "lazyvim.plugins.extras.lang.json" },
-    -- flash
-    { import = "lazyvim.plugins.extras.editor.flash" },
     -- dap
     { import = "lazyvim.plugins.extras.dap.core" },
   },

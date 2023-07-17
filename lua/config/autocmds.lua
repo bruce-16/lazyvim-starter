@@ -6,7 +6,11 @@
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = {
     "typescript",
+    "ts",
     "tsx",
+    "jsx",
+    "javascript",
+    "js",
   },
   callback = function()
     vim.b.autoformat = false
