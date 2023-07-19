@@ -6,10 +6,12 @@
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = {
     "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "javascript",
     "ts",
     "tsx",
     "jsx",
-    "javascript",
     "js",
   },
   callback = function()
