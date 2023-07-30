@@ -25,3 +25,5 @@ map("n", "<C-n>", "<cmd>nohls<cr>", { desc = "nohls", remap = true })
 map("n", "<leader>bC", copyUtils.copyFileAbsolutePath, { desc = "Copy the absolute path of the current buffer." })
 -- copy the relative path of the current buffer
 map("n", "<leader>bc", copyUtils.copyFileRelativePath, { desc = "Copy the relative path of the current buffer." })
+--jk == esc
+map("i", "jk", "<esc>", { desc = "Esc" })
