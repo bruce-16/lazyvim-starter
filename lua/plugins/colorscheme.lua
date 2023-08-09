@@ -2,7 +2,7 @@ return {
   -- {
   --   "folke/tokyonight.nvim",
   --   lazy = true,
-  --   opts = { style = "moon" },
+  --   -- opts = { style = "moon" },
   --   -- opts = { style = "night" },
   --   -- opts = { style = "strom" },
   -- },
@@ -16,10 +16,12 @@ return {
   -- },
 
   { "ellisonleao/gruvbox.nvim" },
+  { "rakr/vim-one" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      -- colorscheme = "gruvbox",
+      colorscheme = "one",
     },
   },
 }
