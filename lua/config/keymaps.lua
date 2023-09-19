@@ -26,4 +26,13 @@ map("n", "<leader>bC", copyUtils.copyFileAbsolutePath, { desc = "Copy the absolu
 -- copy the relative path of the current buffer
 map("n", "<leader>bc", copyUtils.copyFileRelativePath, { desc = "Copy the relative path of the current buffer." })
 --jk == esc
--- map("i", "jk", "<esc>", { desc = "Esc" })
+map("i", "jk", "<esc>", { desc = "Esc" })
+--
+-- disable a-j
+-- Move Lines
+map("n", "<A-j>", "<Nop>", {})
+map("n", "<A-k>", "<Nop>", {})
+map("i", "<A-j>", "<Nop>", {})
+map("i", "<A-k>", "<Nop>", {})
+map("v", "<A-j>", "<Nop>", {})
+map("v", "<A-k>", "<Nop>", {})
