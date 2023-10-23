@@ -52,6 +52,6 @@ require("lazy").setup({
 })
 
 -- do not change root dir when aftering openning a file
-require("lazyvim.util").get_root = function()
+require("lazyvim.util").root.get = function()
   return vim.loop.cwd()
 end
